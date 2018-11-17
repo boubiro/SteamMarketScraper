@@ -1,0 +1,9 @@
+E:\Visual Studio Projects\SteamMarketScraper\SteamMarketScraper\bin\Debug\SteamMarketScraper.exe.config
+E:\Visual Studio Projects\SteamMarketScraper\SteamMarketScraper\obj\Debug\SteamMarketScraper.csprojResolveAssemblyReference.cache
+E:\Visual Studio Projects\SteamMarketScraper\SteamMarketScraper\bin\Debug\chromedriver.exe
+E:\Visual Studio Projects\SteamMarketScraper\SteamMarketScraper\bin\Debug\SteamMarketScraper.exe
+E:\Visual Studio Projects\SteamMarketScraper\SteamMarketScraper\bin\Debug\SteamMarketScraper.pdb
+E:\Visual Studio Projects\SteamMarketScraper\SteamMarketScraper\bin\Debug\WebDriver.dll
+E:\Visual Studio Projects\SteamMarketScraper\SteamMarketScraper\bin\Debug\WebDriver.xml
+E:\Visual Studio Projects\SteamMarketScraper\SteamMarketScraper\obj\Debug\SteamMarketScraper.exe
+E:\Visual Studio Projects\SteamMarketScraper\SteamMarketScraper\obj\Debug\SteamMarketScraper.pdb
