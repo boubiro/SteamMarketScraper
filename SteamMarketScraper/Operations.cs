@@ -18,6 +18,7 @@ namespace SteamMarketScraper
 
         public void ScraperStarter()
         {
+            //Make a new special driver reference just for the marketplace
             IWebDriver OGDriver = new ChromeDriver();
 
             //Go to CSGO's marketplace
@@ -27,24 +28,32 @@ namespace SteamMarketScraper
             System.Threading.Thread.Sleep(2000);
 
             //Search for the products' names
-            IList<IWebElement> productList = OGDriver.FindElements(By.CssSelector(".market_listing_item_name"));
-            IList<IWebElement> imgLinkList = OGDriver.FindElements(By.CssSelector(".market_listing_item_img"));
-            string[] imgSrcList = new string[imgLinkList.Count];
-
-            Console.WriteLine("productList: " + productList.Count);
-            Console.WriteLine("imgLinkList: " + imgLinkList.Count);
-            Console.WriteLine("imgSrcList: " + imgSrcList.Length);
+            //Search for the product's image
+            //Make a new empty array with the length of productImgList
+            IList<IWebElement> productNameList = OGDriver.FindElements(By.CssSelector(".market_listing_item_name"));
+            IList<IWebElement> productImgList = OGDriver.FindElements(By.CssSelector(".market_listing_item_img"));
+            string[] imgSrcList = new string[productImgList.Count];
 
             int productNumber = 0;
 
             for(int i = 0; i < imgSrcList.Length; i++)
             {
-                imgSrcList[i] = imgLinkList[i].GetAttribute("src");
+                //Get the "src" (aka URL) from the image
+                imgSrcList[i] = productImgList[i].GetAttribute("src");
+
                 OpenBrowser();
+
+                //Navigate to the image's url
                 driver.Navigate().GoToUrl(imgSrcList[i]);
+
                 WebClient webClient = new WebClient();
-                webClient.DownloadFile(imgSrcList[i], "a" + productNumber + ".jpeg");
+
+                //Download the image
+                webClient.DownloadFile(imgSrcList[i], "a" + productNumber + ".png");
+
+                //Add 1 to the product number
                 productNumber++;
+
                 CloseBrowser();
             }
 
@@ -71,8 +80,6 @@ namespace SteamMarketScraper
     }
 }
 
-
-    //Make the code have comments
 
     //Be sure to not get chrome to download anything
 
