@@ -7,3 +7,8 @@ E:\Visual Studio Projects\SteamMarketScraper\SteamMarketScraper\bin\Debug\WebDri
 E:\Visual Studio Projects\SteamMarketScraper\SteamMarketScraper\bin\Debug\WebDriver.xml
 E:\Visual Studio Projects\SteamMarketScraper\SteamMarketScraper\obj\Debug\SteamMarketScraper.exe
 E:\Visual Studio Projects\SteamMarketScraper\SteamMarketScraper\obj\Debug\SteamMarketScraper.pdb
+E:\Visual Studio Projects\SteamMarketScraper.exe.config
+E:\Visual Studio Projects\SteamMarketScraper\DownloadedFiles\SteamMarketScraper.exe.config
+E:\Visual Studio Projects\SteamMarketScraper\DownloadedFiles\chromedriver.exe
+E:\Visual Studio Projects\SteamMarketScraper\DownloadedFiles\SteamMarketScraper.exe
+E:\Visual Studio Projects\SteamMarketScraper\DownloadedFiles\SteamMarketScraper.pdb
